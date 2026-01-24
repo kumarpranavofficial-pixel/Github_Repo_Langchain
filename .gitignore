@@ -1,0 +1,10 @@
+# Virtual environment
+.venv/
+venv/
+
+# Environment variables
+.env
+
+# Vector stores
+vectorstore/
+faiss_index/
