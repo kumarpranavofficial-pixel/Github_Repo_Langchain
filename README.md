@@ -1,27 +1,23 @@
-# Hold The Door 🚪🤖
+# GitSensei – GitHub Repo Q&A
 
-Ask questions about any GitHub repository using an LLM.
-
-This project:
-- Takes a GitHub repo URL
-- Clones the repository locally
-- Reads and chunks the code files
-- Uses embeddings + vector search
-- Answers user questions using OpenAI
+GitSensei is a Streamlit + LangChain app that lets you ask natural language questions about any public GitHub repository.  
+It clones the repo, indexes Python files, and answers using Hugging Face 
 
 ---
 
-## Features
-- Works with any public GitHub repo
-- Natural language Q&A over code
-- Uses OpenAI for reasoning
-- Simple CLI interface
+Features
+- Clone and analyze public GitHub repositories
+- Index Python files with FAISS vector store
+- Embed code using sentence-transformers
+- Answer questions with Hugging Face models (Mistral, Llama, etc.)
+- Streamlit UI for easy interaction
 
 ---
 
-## Setup
+Installation
 
-### 1. Clone the repo
 ```bash
-git clone <your-repo-url>
-cd hold-the-door
+git clone https://github.com/your-username/gitsensei.git
+cd gitsensei
+pip install -r requirements.txt
+
