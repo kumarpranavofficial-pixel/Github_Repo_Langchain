@@ -7,8 +7,7 @@ st.set_page_config(page_title="GitSensei – GitHub Repo Q&A", page_icon="📦")
 st.title("GitSensei – Ask Questions about any GitHub Repo")
 st.write(
     "Enter a public GitHub repository URL and a natural language question. "
-    "GitSensei will clone the repo (if needed), analyze the Python files, and "
-    "answer using Groq's Llama 3.1 8B Instant model."
+    "GitSensei will clone the repo (if needed), analyze the Python files"
 )
 
 repo_url = st.text_input(
@@ -36,3 +35,4 @@ if run_button:
             except Exception as e:
                 st.error("Something went wrong while analyzing the repository.")
                 st.exception(e)
+
